@@ -1,0 +1,16 @@
+{
+  "name": "Nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy": "^1.18.1",
+    "koa": "^2.14.1",
+    "koa-proxies": "^0.12.3",
+    "koa-views": "^8.0.0"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.6"
+  }
+}

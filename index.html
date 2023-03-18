@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="GET()">GET</button>
+    <button onclick="POST()">POST</button>
+    <script>
+      const request = (url) => {
+        let XHR = new XMLHttpRequest();
+        XHR.open("GET", url, true);
+        XHR.send();
+      };
+      const GET = () => {
+        request("/api");
+        console.log("GET");
+      };
+      const POST = () => {
+        console.log("POST");
+      };
+    </script>
+  </body>
+</html>
